@@ -1,0 +1,182 @@
+* {
+  font-size: 20px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  overflow: hidden;
+  display: block;
+  background: transparent; /*
+    border: 1px solid #000;*/
+  border: none;
+  outline: none;
+}
+title {
+  display: none;
+}
+
+/*==================This is after ============================*/
+.outer {
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: chocolate;
+}
+.logo {
+  height: 100%;
+  width: 100px;
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+}
+.name {
+  width: 80vw;
+  float: right;
+  height: 100px;
+  background-color: rgb(0, 128, 255);
+}
+h1 {
+  font-size: 50px;
+  padding: 25px 50px;
+}
+
+.main {
+  height: 84.5vh;
+  width: 100%;
+
+  --s: 80px; /* the size */
+  --c: #5e8c6a;
+
+  --_s: calc(2 * var(--s)) calc(2 * var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, #bfb35a 68% 70%, #0000 72%;
+  background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) /
+      var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
+}
+
+.mleft {
+  height: 100%;
+  width: 200px;
+  float: left;
+  border-right: 1px dashed #000;
+  overflow: auto;
+}
+
+.menus {
+  background-color: rgb(153, 83, 43);
+  height: 30px;
+  padding: 5px 25px;
+  margin: 4px;
+}
+.menubar a {
+  text-decoration: none;
+}
+
+.mright,
+.heading h1 {
+  display: inline;
+}
+.heading {
+  background: rgba(250, 5, 5, 0.1);
+  backdrop-filter: blur(3px);
+  height: 50vh;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+/* All data insertion tabs are here */
+.form {
+  background: rgba(86, 34, 99, 0.5);
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(3px 3px 3px #000);
+  overflow-y: scroll;
+}
+.row {
+  background: transparent;
+  height: 70px;
+  width: 90%;
+  margin: 25px 5vh;
+  padding-left: 5vh;
+  backdrop-filter: blur(3px);
+}
+.rleft {
+  background: transparent;
+  height: 100%;
+  width: 40%;
+  float: left;
+  padding: 20px 40px;
+  border-right: 1px dashed #000;
+}
+.r_right {
+  padding: 10px 30px;
+  background: transparent;
+  height: 100%;
+  width: 60%;
+}
+.r_right ::placeholder {
+  color: aliceblue;
+  padding: 10px;
+}
+
+.input {
+  border: none;
+  height: 45px;
+  width: 80%;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+.button {
+  height: 50px;
+  background-color: rgb(53, 179, 53);
+  width: 50%;
+  border-radius: 5px;
+  float: left;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.viewrow {
+  width: 980px;
+  height: 40px;
+  background-color: rgb(27, 170, 253);
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.viewcol {
+  width: 80px;
+  height: 40px;
+  background-color: rgb(30, 190, 110);
+  margin-left: 1px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  color: #000;
+  float: left;
+  text-align: center;
+}
+.w120 {
+  width: 120px;
+}
+.w210 {
+  width: 210px;
+}
+.action {
+  width: 200px;
+}
+.viewrow a {
+  float: left;
+  width: 50%;
+}

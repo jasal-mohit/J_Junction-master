@@ -1,0 +1,139 @@
+/*============ 2 Sides =========*/
+#hotel {
+  background-image: url('../images/svg/H000.svg');
+  background-size: 100% 100%;
+}
+
+.card {
+  width: 300px;
+  height: 250px;
+  perspective: 1000px;
+  margin: 10vh 10vh 5vh 10vh;
+  float: left;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-size: 100% 100%;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card-front img {
+  height: 100%;
+  width: 50px;
+}
+
+.card-back {
+  background-color: #F08A5D;
+  color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+
+.hotel {
+  background-color: #131313;
+  height: 100%;
+  text-align: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 10px 80px;
+}
+
+.hotel h1 {
+  font-size: 40px;
+}
+
+.hotel img {
+  height: 65%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  filter: saturate(1);
+}
+
+.hotel img:hover {
+  filter: saturate(3);
+  transition: 1s;
+}
+
+.hinfo {
+  height: 40%;
+  width: 220px;
+  background: rgb(61, 54, 41);
+  float: left;
+  transition: 1s;
+  border-radius: 20px;
+  margin: 20px 0px 20px 120px;
+  overflow: hidden;
+}
+
+.hinfo:hover {
+  transition: 0.5s;
+  box-shadow: inset 0px 0px 100px rgba(111, 224, 116, 0.5),
+    0px 1px 20px rgba(111, 224, 116, 0.5);
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0px 10px;
+  animation: 3s slideup ease;
+}
+
+.button {
+  color: #EEEEEE;
+  margin: 10px;
+  padding: 5px;
+  height: 35px;
+  width: 100px;
+  display: inline-block;
+  font-size: 20px;
+  background-color: #f44336;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button:hover {
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+
+}
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
